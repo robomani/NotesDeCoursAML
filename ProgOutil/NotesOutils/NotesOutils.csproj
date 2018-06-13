@@ -245,6 +245,7 @@
   <ItemGroup>
     <Compile Include="Assets\Attributes\ClearAttribute.cs" />
     <Compile Include="Assets\Scripts\AttributesExemple.cs" />
+    <Compile Include="Assets\Scripts\LinqExemple.cs" />
     <Compile Include="Assets\Scripts\TestOnGUI.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
