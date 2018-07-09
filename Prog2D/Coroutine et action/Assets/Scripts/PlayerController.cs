@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private int m_HP = 10;
 
-    public Action<int> m_HurtAction;
+    //public Action<int> m_HurtAction;
 
     private void Start()
     {
@@ -29,10 +29,13 @@ public class PlayerController : MonoBehaviour
     private void Damage()
     {
         m_HP--;
+        EventManager.Instance.DispatchEvent(EventID.UpdateHP, m_HP);
+        /*
         if (m_HurtAction != null)
         {
             m_HurtAction(m_HP);
         }
+        */
     }
 
     private void OnDestroy()
